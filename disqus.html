@@ -6,7 +6,7 @@
     <meta content='' name='description'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>N.S.Lin | Home</title>
+    <title>N.S.Lin | Disqus</title>
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src='/js/lib/html5shiv.js'></script>
@@ -14,7 +14,7 @@
     <link href="/css/main.css" media="all" rel="stylesheet" type="text/css" />
     <script src='/js/lib/jquery-2.0.3.min.js'></script>
   </head>
-  <body class='index'>
+  <body class='disqus'>
     <div class='navbar navbar-static-top navbar-inverse'>
       <div class='navbar-inner'>
         <div class='container'>
@@ -41,8 +41,27 @@
       <div class='row'>
         <div class='span9'>
           <div class='hero-unit'>
-            <h1>From Vitali to Dr.Pepper</h1>
-            <h2>Since 2011</h2>
+            <h1>Disqus Me</h1>
+            <div id='disqus_thread'></div>
+            <script>
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'teensuulin'; // required: replace example with your forum shortname
+              
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the
+              <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+              <a class='dsq-brlink' href='http://disqus.com'>
+                comments powered by
+                <span class='logo-disqus'>Disqus</span>
+              </a>
+            </noscript>
           </div>
         </div>
         <div class='span3'>
