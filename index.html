@@ -43,17 +43,32 @@
       <div class='row'>
         <div class='span9'>
           <div class='hero-unit'>
-            <h1>From Vitali to Dr.Pepper</h1>
-            <h2>Since 2011</h2>
+          	<h1>From Vitali to Dr.Pepper</h1>
+          	<h2>Since 2011</h2>
+          	<br />
+          	<img src="/img/index_pho.jpg", :alt="fata pvc, orign of this website's theme" />
+          	<p>
+          		<br />
+          		<small>
+          			首頁目前有點空就先放上這張圖片吧！ 這張圖和這個網站有很大的關係<br/>
+          
+          			除了是我的心靈支柱以外，這個網站的配色也是由這張圖片產生的喔！<br/>
+          			
+          			詳細可以看網站技術部分的介紹 ~
+          		</small>
+          		
+          	</p>
           </div>
         </div>
         <div class='span3'>
           <div class='well sidebar-nav' id='rss-nav'>
-            <li class='nav-header'>Blog posts</li>
+            <ul class='nav nav-list' id='rss-nav-ul'>
+              <li class='nav-header'>Blog posts</li>
+            </ul>
           </div>
           <script>
             (function(){
-              var cont = $('#rss-nav');
+              var cont = $('#rss-nav-ul');
               loadFeeds(cont, "http://qmono2.blogspot.com/feeds/posts/default", 5);
             })();
           </script>

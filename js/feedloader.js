@@ -5,13 +5,12 @@
     var initialize;
     google.load("feeds", "1");
     initialize = function() {
-      var feed, ul;
+      var feed;
       feed = new google.feeds.Feed(url);
       if (num != null) {
         feed.setNumEntries(num);
       }
-      ul = $('<ul></ul>').addClass('nav').addClass('nav-list');
-      feed.load(function(result) {
+      return feed.load(function(result) {
         var a, entry, li, _i, _len, _ref, _results;
         _ref = result.feed.entries;
         _results = [];
@@ -22,11 +21,10 @@
             target: '_blank'
           }).html(entry.title);
           li = $('<li></li>').append(a);
-          _results.push(ul.append(li));
+          _results.push(container.append(li));
         }
         return _results;
       });
-      return container.append(ul);
     };
     return google.setOnLoadCallback(initialize);
   };

@@ -52,11 +52,13 @@
         </div>
         <div class='span3'>
           <div class='well sidebar-nav' id='rss-nav'>
-            <li class='nav-header'>Blog posts</li>
+            <ul class='nav nav-list' id='rss-nav-ul'>
+              <li class='nav-header'>Blog posts</li>
+            </ul>
           </div>
           <script>
             (function(){
-              var cont = $('#rss-nav');
+              var cont = $('#rss-nav-ul');
               loadFeeds(cont, "http://qmono2.blogspot.com/feeds/posts/default", 5);
             })();
           </script>
