@@ -2311,6 +2311,8 @@
 
 
 
+
+
 // Load all Bootstrap JavaScripts
 
 
@@ -2328,6 +2330,7 @@
 // require bootstrap-tooltip
 // require bootstrap-transition
 // require bootstrap-typeahead
+
 
 
 
