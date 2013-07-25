@@ -42,18 +42,21 @@
     <div class='container'>
       <div class='row'>
         <div class='span9'>
-          <div>
+          <div class='hero-unit'>
             <h1>About</h1>
-            <div>
-              <ul class='nav nav-tabs'>
+            <div id='main-article'>
+              <ul class='nav nav-pills'>
                 <li id='me'><a href="#">Me</a></li>
                 <li><a href="#">Website</a></li>
               </ul>
-              <div id='about-content'></div>
+              <div class='well hero-inner-post' id='about-content'></div>
             </div>
             <script>
               $('#me').addClass('active');
-              $('#about-content').html('Test. <br/>, Here is the text.');
+              $('#about-content').html('<h3>About me</h3>Test. <br/>, Here is the text.');
+              $('#main-article').css('margin-top', '+=24px');
+              //var bgColor = $('body').css('background-color');
+              //$('#about-content').css('background-color', bgColor);
             </script>
           </div>
         </div>
