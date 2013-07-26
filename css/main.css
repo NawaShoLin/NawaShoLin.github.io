@@ -12289,6 +12289,770 @@ a.badge:hover {
   position: fixed; }
 
 /*
+ * Bootstrap Responsive v2.0.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+/* line 10, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+@media (max-width: 480px) {
+  /* line 15, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0); }
+
+  /* line 18, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .page-header h1 small {
+    display: block;
+    line-height: 18px; }
+
+  /* line 25, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    height: 28px;
+    /* Make inputs at least the height of their button counterpart */
+    /* Makes inputs behave like true block-level elements */
+    -webkit-box-sizing: border-box;
+    /* Older Webkit */
+    -moz-box-sizing: border-box;
+    /* Older FF */
+    -ms-box-sizing: border-box;
+    /* IE8 */
+    box-sizing: border-box;
+    /* CSS3 spec*/ }
+
+  /* line 47, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    width: auto; }
+
+  /* line 51, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc; }
+
+  /* line 54, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left; }
+
+  /* line 60, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .form-horizontal .controls {
+    margin-left: 0; }
+
+  /* line 63, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .form-horizontal .control-list {
+    padding-top: 0; }
+
+  /* line 66, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  /* line 70, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .modal {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    margin: 0; }
+
+  /* line 78, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .modal.fade.in {
+    top: auto; }
+
+  /* line 81, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px; }
+
+  /* line 85, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .carousel-caption {
+    position: static; } }
+@media (max-width: 768px) {
+  /* line 90, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .container {
+    width: auto;
+    padding: 0 20px; }
+
+  /* line 94, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid {
+    width: 100%; }
+
+  /* line 97, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row {
+    margin-left: 0; }
+
+  /* line 101, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row > [class*="span"],
+  .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0; } }
+@media (min-width: 768px) and (max-width: 980px) {
+  /* line 109, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row {
+    margin-left: -20px;
+    *zoom: 1; }
+
+  /* line 114, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row:before,
+  .row:after {
+    display: table;
+    content: ""; }
+
+  /* line 118, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row:after {
+    clear: both; }
+
+  /* line 121, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  [class*="span"] {
+    float: left;
+    margin-left: 20px; }
+
+  /* line 125, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span1 {
+    width: 42px; }
+
+  /* line 128, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span2 {
+    width: 104px; }
+
+  /* line 131, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span3 {
+    width: 166px; }
+
+  /* line 134, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span4 {
+    width: 228px; }
+
+  /* line 137, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span5 {
+    width: 290px; }
+
+  /* line 140, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span6 {
+    width: 352px; }
+
+  /* line 143, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span7 {
+    width: 414px; }
+
+  /* line 146, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span8 {
+    width: 476px; }
+
+  /* line 149, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span9 {
+    width: 538px; }
+
+  /* line 152, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span10 {
+    width: 600px; }
+
+  /* line 155, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span11 {
+    width: 662px; }
+
+  /* line 159, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span12,
+  .container {
+    width: 724px; }
+
+  /* line 162, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset1 {
+    margin-left: 82px; }
+
+  /* line 165, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset2 {
+    margin-left: 144px; }
+
+  /* line 168, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset3 {
+    margin-left: 206px; }
+
+  /* line 171, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset4 {
+    margin-left: 268px; }
+
+  /* line 174, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset5 {
+    margin-left: 330px; }
+
+  /* line 177, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset6 {
+    margin-left: 392px; }
+
+  /* line 180, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset7 {
+    margin-left: 454px; }
+
+  /* line 183, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset8 {
+    margin-left: 516px; }
+
+  /* line 186, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset9 {
+    margin-left: 578px; }
+
+  /* line 189, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset10 {
+    margin-left: 640px; }
+
+  /* line 192, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset11 {
+    margin-left: 702px; }
+
+  /* line 195, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1; }
+
+  /* line 200, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: ""; }
+
+  /* line 204, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid:after {
+    clear: both; }
+
+  /* line 207, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid > [class*="span"] {
+    float: left;
+    margin-left: 2.762430939%; }
+
+  /* line 211, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid > [class*="span"]:first-child {
+    margin-left: 0; }
+
+  /* line 214, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span1 {
+    width: 5.801104972%; }
+
+  /* line 217, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span2 {
+    width: 14.364640883%; }
+
+  /* line 220, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span3 {
+    width: 22.928176794%; }
+
+  /* line 223, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span4 {
+    width: 31.491712705%; }
+
+  /* line 226, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span5 {
+    width: 40.055248616%; }
+
+  /* line 229, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span6 {
+    width: 48.618784527%; }
+
+  /* line 232, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span7 {
+    width: 57.182320438000005%; }
+
+  /* line 235, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span8 {
+    width: 65.74585634900001%; }
+
+  /* line 238, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span9 {
+    width: 74.30939226%; }
+
+  /* line 241, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span10 {
+    width: 82.87292817100001%; }
+
+  /* line 244, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span11 {
+    width: 91.436464082%; }
+
+  /* line 247, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span12 {
+    width: 99.999999993%; }
+
+  /* line 252, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 32px; }
+
+  /* line 257, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 94px; }
+
+  /* line 262, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 156px; }
+
+  /* line 267, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 218px; }
+
+  /* line 272, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 280px; }
+
+  /* line 277, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 342px; }
+
+  /* line 282, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 404px; }
+
+  /* line 287, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 466px; }
+
+  /* line 292, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 528px; }
+
+  /* line 297, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 590px; }
+
+  /* line 302, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 652px; }
+
+  /* line 307, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 714px; } }
+@media (max-width: 980px) {
+  /* line 312, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  body {
+    padding-top: 0; }
+
+  /* line 315, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar-fixed-top {
+    position: static;
+    margin-bottom: 18px; }
+
+  /* line 319, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar-fixed-top .navbar-inner {
+    padding: 5px; }
+
+  /* line 322, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .container {
+    width: auto;
+    padding: 0; }
+
+  /* line 326, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px; }
+
+  /* line 331, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav-collapse {
+    clear: left; }
+
+  /* line 334, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav {
+    float: none;
+    margin: 0 0 9px; }
+
+  /* line 338, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav > li {
+    float: none; }
+
+  /* line 341, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav > li > a {
+    margin-bottom: 2px; }
+
+  /* line 344, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav > .divider-vertical {
+    display: none; }
+
+  /* line 348, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav > li > a,
+  .navbar .dropdown-menu a {
+    padding: 6px 15px;
+    font-weight: bold;
+    color: #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+
+  /* line 356, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .dropdown-menu li + li a {
+    margin-bottom: 2px; }
+
+  /* line 360, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav > li > a:hover,
+  .navbar .dropdown-menu a:hover {
+    background-color: #222222; }
+
+  /* line 363, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: block;
+    max-width: none;
+    margin: 0 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+  /* line 382, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .dropdown-menu:before,
+  .navbar .dropdown-menu:after {
+    display: none; }
+
+  /* line 385, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .dropdown-menu .divider {
+    display: none; }
+
+  /* line 389, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar-form,
+  .navbar-search {
+    float: none;
+    padding: 9px 15px;
+    margin: 9px 0;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  /* line 399, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar .nav.pull-right {
+    float: none;
+    margin-left: 0; }
+
+  /* line 403, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .navbar-static .navbar-inner {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  /* line 407, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .btn-navbar {
+    display: block; }
+
+  /* line 410, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .nav-collapse {
+    overflow: hidden;
+    height: 0; } }
+@media (min-width: 980px) {
+  /* line 416, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .nav-collapse.collapse {
+    height: auto !important; } }
+@media (min-width: 1200px) {
+  /* line 421, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row {
+    margin-left: -30px;
+    *zoom: 1; }
+
+  /* line 426, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row:before,
+  .row:after {
+    display: table;
+    content: ""; }
+
+  /* line 430, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row:after {
+    clear: both; }
+
+  /* line 433, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  [class*="span"] {
+    float: left;
+    margin-left: 30px; }
+
+  /* line 437, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span1 {
+    width: 70px; }
+
+  /* line 440, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span2 {
+    width: 170px; }
+
+  /* line 443, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span3 {
+    width: 270px; }
+
+  /* line 446, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span4 {
+    width: 370px; }
+
+  /* line 449, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span5 {
+    width: 470px; }
+
+  /* line 452, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span6 {
+    width: 570px; }
+
+  /* line 455, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span7 {
+    width: 670px; }
+
+  /* line 458, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span8 {
+    width: 770px; }
+
+  /* line 461, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span9 {
+    width: 870px; }
+
+  /* line 464, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span10 {
+    width: 970px; }
+
+  /* line 467, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span11 {
+    width: 1070px; }
+
+  /* line 471, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .span12,
+  .container {
+    width: 1170px; }
+
+  /* line 474, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset1 {
+    margin-left: 130px; }
+
+  /* line 477, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset2 {
+    margin-left: 230px; }
+
+  /* line 480, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset3 {
+    margin-left: 330px; }
+
+  /* line 483, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset4 {
+    margin-left: 430px; }
+
+  /* line 486, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset5 {
+    margin-left: 530px; }
+
+  /* line 489, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset6 {
+    margin-left: 630px; }
+
+  /* line 492, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset7 {
+    margin-left: 730px; }
+
+  /* line 495, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset8 {
+    margin-left: 830px; }
+
+  /* line 498, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset9 {
+    margin-left: 930px; }
+
+  /* line 501, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset10 {
+    margin-left: 1030px; }
+
+  /* line 504, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .offset11 {
+    margin-left: 1130px; }
+
+  /* line 507, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1; }
+
+  /* line 512, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: ""; }
+
+  /* line 516, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid:after {
+    clear: both; }
+
+  /* line 519, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid > [class*="span"] {
+    float: left;
+    margin-left: 2.564102564%; }
+
+  /* line 523, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid > [class*="span"]:first-child {
+    margin-left: 0; }
+
+  /* line 526, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span1 {
+    width: 5.982905983%; }
+
+  /* line 529, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span2 {
+    width: 14.529914530000001%; }
+
+  /* line 532, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span3 {
+    width: 23.076923077%; }
+
+  /* line 535, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span4 {
+    width: 31.623931624%; }
+
+  /* line 538, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span5 {
+    width: 40.170940171000005%; }
+
+  /* line 541, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span6 {
+    width: 48.717948718%; }
+
+  /* line 544, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span7 {
+    width: 57.264957265%; }
+
+  /* line 547, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span8 {
+    width: 65.81196581200001%; }
+
+  /* line 550, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span9 {
+    width: 74.358974359%; }
+
+  /* line 553, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span10 {
+    width: 82.905982906%; }
+
+  /* line 556, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span11 {
+    width: 91.45299145300001%; }
+
+  /* line 559, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .row-fluid .span12 {
+    width: 100%; }
+
+  /* line 564, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 60px; }
+
+  /* line 569, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 160px; }
+
+  /* line 574, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 260px; }
+
+  /* line 579, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 360px; }
+
+  /* line 584, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 460px; }
+
+  /* line 589, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 560px; }
+
+  /* line 594, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 660px; }
+
+  /* line 599, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 760px; }
+
+  /* line 604, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 860px; }
+
+  /* line 609, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 960px; }
+
+  /* line 614, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 1060px; }
+
+  /* line 619, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 1160px; }
+
+  /* line 622, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .thumbnails {
+    margin-left: -30px; }
+
+  /* line 625, /home/lin/Codes/web/gitio/src/source/css/lavish-reponsive.less */
+  .thumbnails > li {
+    margin-left: 30px; } }
+/*
  * Bootstrap Responsive v2.3.2
  *
  * Copyright 2012 Twitter, Inc
