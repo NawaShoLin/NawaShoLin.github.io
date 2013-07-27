@@ -2312,67 +2312,60 @@
 
 
 (function() {
-  var loadFeeds;
-
-  loadFeeds = function(container, url, num) {
-    var initialize;
-    google.load("feeds", "1");
-    initialize = function() {
-      var feed;
-      feed = new google.feeds.Feed(url);
-      if (num != null) {
-        feed.setNumEntries(num);
-      }
-      return feed.load(function(result) {
-        var a, entry, li, _i, _len, _ref, _results;
-        _ref = result.feed.entries;
-        _results = [];
-        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          entry = _ref[_i];
-          a = $('<a></a>').attr({
-            href: entry.link,
-            target: '_blank'
-          }).html(entry.title);
-          li = $('<li></li>').append(a);
-          _results.push(container.append(li));
-        }
-        return _results;
-      });
-    };
-    return google.setOnLoadCallback(initialize);
-  };
-
-  window.loadFeeds = loadFeeds;
-
-}).call(this);
-(function() {
   var __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   (function($) {
-    var ApplyswitchEffect, parseDash;
+    var ApplyswitchEffect, loadFeeds, parseDash;
+    loadFeeds = function(feedObjects) {
+      var initialize;
+      google.load("feeds", "1");
+      initialize = function() {
+        var fo, loadFeed, _i, _len, _results;
+        loadFeed = function(container, url, num) {
+          var feed;
+          feed = new google.feeds.Feed(url);
+          if (num != null) {
+            feed.setNumEntries(num);
+          }
+          return feed.load(function(result) {
+            var a, entry, li, _i, _len, _ref, _results;
+            _ref = result.feed.entries;
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+              entry = _ref[_i];
+              a = $('<a></a>').attr({
+                href: entry.link,
+                target: '_blank'
+              }).html(entry.title);
+              li = $('<li></li>').append(a);
+              _results.push(container.append(li));
+            }
+            return _results;
+          });
+        };
+        _results = [];
+        for (_i = 0, _len = feedObjects.length; _i < _len; _i++) {
+          fo = feedObjects[_i];
+          _results.push(loadFeed(fo.container, fo.url, fo.num));
+        }
+        return _results;
+      };
+      return google.setOnLoadCallback(initialize);
+    };
     (function() {
-      var cont;
-      cont = $('#rss-nav-ul');
-      loadFeeds(cont, "http://qmono2.blogspot.com/feeds/posts/default", 5);
-      return void 0;
+      var logdown, owo;
+      owo = {
+        container: $('#owo-rss-nav-ul'),
+        url: "http://qmono2.blogspot.com/feeds/posts/default",
+        num: 5
+      };
+      logdown = {
+        container: $('#logdown-rss-nav-ul'),
+        url: "http://feeds.feedburner.com/0w0",
+        num: 5
+      };
+      return loadFeeds([owo, logdown]);
     })();
-    /*
-    (->
-      $('#main-article').css('margin-top', '+=24px')
-    
-      runEffect = (ele)->
-        selectedEffect = "slide"
-        options = {}
-        ele.hide( selectedEffect, options, 1000, callback )
-        callback = ->
-    
-      $("#me").click(->
-        runEffect($('#about-content'))
-        false
-      )
-    )()
-    */
-
     parseDash = function(str, options) {
       var ary, id, splitSymbol, to_find;
       if (options == null) {
