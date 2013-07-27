@@ -14278,3 +14278,11 @@ a.badge:hover {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important; } }
+/* line 1, /home/lin/Codes/web/gitio/src/source/css/myconfig.css.scss */
+.hero-inner-post {
+  background-color: #d6d6d0;
+  border: #ECECEC; }
+
+/* line 6, /home/lin/Codes/web/gitio/src/source/css/myconfig.css.scss */
+section {
+  margin-bottom: 24px; }
